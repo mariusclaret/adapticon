@@ -72,12 +72,12 @@ Definetly check out this talented designer on [Twitter](https://twitter.com/razg
 
 ## References
 
-- [Official documentation](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive.html) (https://developer.android.com)
-- [What are Adaptive Icons and why do I want them?](https://www.androidcentral.com/adaptive-icons) (https://androidcentral.com)
-- [Pixel Shift - Adaptive Icons](https://pixelshift.co/adaptive-icons/) (https://pixelshift.co)
-- [Understanding Android Adaptive Icons](https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2) (https://medium.com)
-- [Designing Adaptive Icons](https://medium.com/google-design/designing-adaptive-icons-515af294c783) (https://medium.com)
-- [Implementing Adaptive Icons](https://medium.com/google-developers/implementing-adaptive-icons-1e4d1795470e) (https://medium.com)
+- [Official documentation](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive.html)
+- [What are Adaptive Icons and why do I want them?](https://www.androidcentral.com/adaptive-icons)
+- [Pixel Shift - Adaptive Icons](https://pixelshift.co/adaptive-icons/)
+- [Understanding Android Adaptive Icons](https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2)
+- [Designing Adaptive Icons](https://medium.com/google-design/designing-adaptive-icons-515af294c783)
+- [Implementing Adaptive Icons](https://medium.com/google-developers/implementing-adaptive-icons-1e4d1795470e)
 
 ## Author
 
