@@ -1,0 +1,4 @@
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} !=443
+#RewriteRule ^(.*)$ https://adapticon.tooo.io/$1 [R=301,L]
+ErrorDocument 404 /
