@@ -70,7 +70,7 @@ Definetly check out this talented designer on [Twitter](https://twitter.com/razg
 - [YouTube](https://adapticon.tooo.io/#/bg=https://i.imgur.com/MxLNcXK.png/fg=https://i.imgur.com/reUWG8i.png)
 - [YouTube Gaming](https://adapticon.tooo.io/#/bg=https://i.imgur.com/ULAAwhP.png/fg=https://i.imgur.com/rWD90Bi.png)
 
-## References
+## Reference
 
 - [Official documentation](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive.html)
 - [What are Adaptive Icons and why do I want them?](https://www.androidcentral.com/adaptive-icons)
