@@ -2,12 +2,15 @@
 
 Android 8 introduces a new format for app icons, which can display a variety of shapes across different device models. The look of an adaptive icon is defined by 2 layers, consisting of a background and a foreground image.
 
-**Try them out: [https://adapticon.tooo.io](https://adapticon.tooo.io)**
+**Try them out: [https://adapticon.tooo.io](https://adapticon.tooo.io/)**
 
 ![Ripple Effect Demo Gif](https://i.imgur.com/1NCSObR.gif)
 
 ## Icons by Cristian Ruiz
-Definetly check out this talented designer on [Twitter](https://twitter.com/razgriz94) and his awesome [article](https://pixelshift.co/adaptive-icons/) about Adaptive Icons on [pixelshift.co](https://pixelshift.co/adaptive-icons/). All icons below are created by him and generously provided as beautiful examples of Adaptive Icons.
+
+Definitely check out this talented designer on [Twitter](https://twitter.com/razgriz94) and his awesome [article](https://pixelshift.co/adaptive-icons/) about Adaptive Icons on [pixelshift.co](https://pixelshift.co/adaptive-icons/).
+
+All icons below are created by him and generously provided as beautiful examples of Adaptive Icons.
 
 - [1Password](https://adapticon.tooo.io/#/bg=https://i.imgur.com/3ebsVcl.png/fg=https://i.imgur.com/y1Tf4cI.png)
 - [Allo](https://adapticon.tooo.io/#/bg=https://i.imgur.com/sYQAZ2n.png/fg=https://i.imgur.com/848hNWq.png)
