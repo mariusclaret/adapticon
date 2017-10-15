@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <style>
+        body {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            font-family: "Roboto";
+            cursor: default;
+            outline: none;
+            user-select: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            background: #FFF;
+            --light: #4885ED;
+            --theme: #3875DD;
+            --dark: #2865CD;
+        }
+        
+        #mask_android {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            bottom: -40px;
+            left: -40px;
+            border-radius: 50%;
+            border: 48px solid #FFF;
+            opacity: 1;
+        }
+        
+        #mask_apple {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            bottom: -40px;
+            left: -40px;
+            border-radius: 100px;
+            border: 40px solid #000;
+            opacity: 0;
+        }
+        
+        #border {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            bottom: 8px;
+            left: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            opacity: 1;
+        }
+        
+        #content {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 192px;
+            width: 192px;
+            border: 4px solid #000;
+            overflow: hidden;
+            background: var(--light);
+        }
+        
+        #bg,
+        #fg {
+            position: absolute;
+            top: -48px;
+            left: -48px;
+            height: 288px;
+            width: 288px;
+        }
+    </style>
+
+    <div id="content">
+        <img id="bg" src="../background.png">
+        <img id="fg" src="../foreground.png">
+
+        <div id="border"></div>
+        <div id="mask_android"></div>
+        <div id="mask_apple"></div>
+    </div>
+</body>
+
+</html>

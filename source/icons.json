@@ -1,0 +1,216 @@
+{
+    "icons": [{
+        "foreground": "https://adapticon.tooo.io/foreground.png",
+        "background": "https://adapticon.tooo.io/background.png",
+        "user": "GoogleDesign"
+    }, {
+        "foreground": "https://i.imgur.com/rdWZQj8.png",
+        "background": "https://i.imgur.com/Mn5hNFP.png",
+        "user": "taylorling"
+    }, {
+        "foreground": "https://i.imgur.com/dl1BR79.png",
+        "background": "https://i.imgur.com/9JLGrsK.png",
+        "user": "mcookie"
+    }, {
+        "foreground": "https://i.imgur.com/5nbdXcS.png",
+        "background": "https://i.imgur.com/8iK5B40.png",
+        "user": "javidots"
+    }, {
+        "foreground": "https://i.imgur.com/ldMYtkW.png",
+        "background": "https://i.imgur.com/Z8875p4.png",
+        "user": "omartosca"
+    }, {
+        "foreground": "https://i.imgur.com/pAK0GsL.png",
+        "background": "https://i.imgur.com/iEIuUQ3.png",
+        "user": "laureanorp"
+    }, {
+        "foreground": "https://i.imgur.com/yTukulb.png",
+        "background": "https://i.imgur.com/bubkput.png",
+        "user": "wellingtonicons"
+    }, {
+        "foreground": "https://i.imgur.com/1eLx6d3.png",
+        "background": "https://i.imgur.com/8TpIUKq.png",
+        "user": "mariusclaret"
+    }, {
+        "foreground": "https://i.imgur.com/sSGuM1m.png",
+        "background": "https://i.imgur.com/b5uL7eK.png",
+        "user": "NovaDNG"
+    }, {
+        "foreground": "https://i.imgur.com/l6q1XMX.png",
+        "background": "https://i.imgur.com/Rc8jAGb.png",
+        "user": "crafty"
+    }, {
+        "foreground": "https://i.imgur.com/SOaHmxw.png",
+        "background": "https://i.imgur.com/u06aq9X.png",
+        "user": "realHeinrichR"
+    }, {
+        "foreground": "https://i.imgur.com/iTStfwN.png",
+        "background": "https://i.imgur.com/YkjTd2s.png",
+        "user": "CliffWade"
+    }, {
+        "foreground": "https://i.imgur.com/PaVwRFb.png",
+        "background": "https://i.imgur.com/uhCyg8Y.png",
+        "user": "Axinen"
+    }, {
+        "foreground": "https://i.imgur.com/IlJ23bx.png",
+        "background": "https://i.imgur.com/afWBHRK.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/SND1akf.png",
+        "background": "https://i.imgur.com/2iLgPyf.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/mgqgRdL.png",
+        "background": "https://i.imgur.com/wS0CDdJ.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/rLtlKRJ.png",
+        "background": "https://i.imgur.com/9Xp3xdL.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/uBnxkhh.png",
+        "background": "https://i.imgur.com/7eXDCi4.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/tZNFhzm.png",
+        "background": "https://i.imgur.com/iB4ReNR.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/1iSdJy3.png",
+        "background": "https://i.imgur.com/dQkVgXE.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/IRLP5Hf.png",
+        "background": "https://i.imgur.com/KUCUCkE.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/97vSLYp.png",
+        "background": "https://i.imgur.com/qBRxIdj.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/aMjcMwd.png",
+        "background": "https://i.imgur.com/HVO2VRi.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/u4mXnWr.png",
+        "background": "https://i.imgur.com/qlugh7Y.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/beWoJuy.png",
+        "background": "https://i.imgur.com/16UDXEW.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/M8FksEJ.png",
+        "background": "https://i.imgur.com/30tX7lI.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/4fIhxto.png",
+        "background": "https://i.imgur.com/ZtKUoVC.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/aXhMb1Y.png",
+        "background": "https://i.imgur.com/kk9lOl3.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/jceH9gr.png",
+        "background": "https://i.imgur.com/iqGpQCh.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/Lel2WGg.png",
+        "background": "https://i.imgur.com/4eK9qQt.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/GtwjYvU.png",
+        "background": "https://i.imgur.com/5EW3oEt.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/Js40f4a.png",
+        "background": "https://i.imgur.com/mB3kBWf.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/reUWG8i.png",
+        "background": "https://i.imgur.com/MxLNcXK.png",
+        "user": "razgriz94"
+    }, {
+        "foreground": "https://i.imgur.com/rWD90Bi.png",
+        "background": "https://i.imgur.com/ULAAwhP.png",
+        "user": "razgriz94"
+    }],
+    "users": {
+        "razgriz94": {
+            "image": "https://pbs.twimg.com/profile_images/788969384056270848/5vNQ5bcE_400x400.jpg",
+            "name": "Cristian Ruiz",
+            "link": "https://twitter.com/razgriz94"
+        },
+        "GoogleDesign": {
+            "image": "https://pbs.twimg.com/profile_images/874702053892734976/YCyX8SNj_400x400.jpg",
+            "name": "Google Design",
+            "link": "https://twitter.com/googledesign"
+        },
+        "CliffWade": {
+            "image": "https://pbs.twimg.com/profile_images/896020728906039296/P9jAOKDR_400x400.jpg",
+            "name": "Cliff Wade",
+            "link": "https://twitter.com/CliffWade"
+        },
+        "jacksonhvisuals": {
+            "image": "https://pbs.twimg.com/profile_images/840281832667004928/S4Ia3jg1_400x400.jpg",
+            "name": "Jackson Hayes",
+            "link": "https://twitter.com/jacksonhvisuals"
+        },
+        "taylorling": {
+            "image": "https://pbs.twimg.com/profile_images/850280567467671553/TFamAIzg_400x400.jpg",
+            "name": "Taylor Ling",
+            "link": "https://twitter.com/taylorling"
+        },
+        "mcookie": {
+            "image": "https://pbs.twimg.com/profile_images/910716419385561088/ia2aZd0S_400x400.jpg",
+            "name": "Michael Cook",
+            "link": "https://twitter.com/mcookie"
+        },
+        "javidots": {
+            "image": "https://pbs.twimg.com/profile_images/892338247992578048/ESmr3okn_400x400.jpg",
+            "name": "Javi Toro",
+            "link": "https://twitter.com/javidots"
+        },
+        "omartosca": {
+            "image": "https://pbs.twimg.com/profile_images/865238023050547200/ntJItfuM_400x400.jpg",
+            "name": "Omar Tosca",
+            "link": "https://twitter.com/omartosca"
+        },
+        "laureanorp": {
+            "image": "https://pbs.twimg.com/profile_images/880211701026758657/dRAIuUn9_400x400.jpg",
+            "name": "Laureano",
+            "link": "https://twitter.com/laureanorp"
+        },
+        "Axinen": {
+            "image": "https://pbs.twimg.com/profile_images/894267119973650432/LWl-GeEC_400x400.jpg",
+            "name": "Julian Gomez",
+            "link": "https://twitter.com/Axinen"
+        },
+        "wellingtonicons": {
+            "image": "https://pbs.twimg.com/profile_images/894334603804254212/B-wR-EVD_400x400.jpg",
+            "name": "Tom Wellington",
+            "link": "https://twitter.com/wellingtonicons"
+        },
+        "mariusclaret": {
+            "image": "https://pbs.twimg.com/profile_images/908766663956365318/8L4FOJ87_400x400.jpg",
+            "name": "Marius Claret",
+            "link": "https://twitter.com/mariusclaret"
+        },
+        "NovaDNG": {
+            "image": "https://pbs.twimg.com/profile_images/871348882332016640/9ICIElnL_400x400.jpg",
+            "name": "NovaDNG",
+            "link": "https://twitter.com/NovaDNG"
+        },
+        "crafty": {
+            "image": "https://pbs.twimg.com/profile_images/1109843550/me_square_400x400.jpg",
+            "name": "Nick Butcher",
+            "link": "https://twitter.com/crafty"
+        },
+        "realHeinrichR": {
+            "image": "https://pbs.twimg.com/profile_images/897626578879959041/4S1RqffF_400x400.jpg",
+            "name": "Heinrich Reimer",
+            "link": "https://twitter.com/realHeinrichR"
+        }
+    }
+}
