@@ -5,13 +5,36 @@ function image(url, height, width) {
     return "https://images.weserv.nl/?url=" + url.replace("https://", "").replace("http://", "") + "&h=" + height + "&w=" + width + "&t=squaredown";
 }
 
-document.getElementById("visual_radius_input").oninput = function () {
-    const value = parseInt(document.getElementById("visual_radius_input").value);
-    document.getElementById("visual_radius_trend").style.width = (value * 4) + "px";
-    document.getElementById("visual_radius_thumb").style.transform = "translateX(" + (value * 4) + "px";
-    document.getElementById("visual_icon_cover").style.borderRadius = (192 + value * 2) + "px";
-    document.getElementById("visual_icon_shadow").style.borderRadius = (value * 2) + "px";
+let corner = 0;
+let corner_1 = 24;
+let corner_2 = 24;
+let corner_3 = 24;
+let corner_4 = 24;
+
+document.getElementById("corner").onclick = function () {
+    corner = (corner === 4) ? 0 : corner + 1;
+    document.getElementById("corner_1").className = (corner != 0 && corner != 1) ? "active" : "";
+    document.getElementById("corner_2").className = (corner != 0 && corner != 2) ? "active" : "";
+    document.getElementById("corner_3").className = (corner != 0 && corner != 3) ? "active" : "";
+    document.getElementById("corner_4").className = (corner != 0 && corner != 4) ? "active" : "";
 };
+
+document.getElementById("radius_input").oninput = function () {
+    const value = parseInt(document.getElementById("radius_input").value) * 2;
+
+    if (corner === 0) corner_1 = corner_2 = corner_3 = corner_4 = value;
+    if (corner === 1) corner_1 = value;
+    if (corner === 2) corner_2 = value;
+    if (corner === 3) corner_3 = value;
+    if (corner === 4) corner_4 = value;
+
+    document.getElementById("radius_trend").style.width = (value * 2) + "px";
+    document.getElementById("radius_thumb").style.transform = "translateX(" + (value * 2) + "px";
+    document.getElementById("icon_cover").style.borderRadius = (192 + corner_1) + "px " + (192 + corner_2) + "px " + (192 + corner_3) + "px " + (192 + corner_4) + "px ";
+    document.getElementById("icon_shadow").style.borderRadius = corner_1 + "px " + corner_2 + "px " + corner_3 + "px " + corner_4 + "px ";
+};
+
+document.getElementById("radius_input").oninput();
 
 document.getElementById("example_custom").onclick = function () {
     document.getElementById("blocker").className = "active";
@@ -21,8 +44,6 @@ document.getElementById("example_custom").onclick = function () {
         document.getElementById("custom").className = "";
     };
 };
-
-document.getElementById("visual_radius_input").oninput();
 
 let down, downX, downY, deltaX, deltaY, moved;
 
@@ -89,51 +110,51 @@ document.getElementById("share").onclick = function () {
     }
 };
 
-document.getElementById("visual_animation_top").onclick = function () {
+document.getElementById("animation_top").onclick = function () {
     document.getElementById("icon").classList.add("top");
-    setTimeout(() => document.getElementById("icon").classList.remove("top"), 240);
+    setTimeout(() => document.getElementById("icon").classList.remove("top"), 320);
 };
 
-document.getElementById("visual_animation_right").onclick = function () {
+document.getElementById("animation_right").onclick = function () {
     document.getElementById("icon").classList.add("right");
-    setTimeout(() => document.getElementById("icon").classList.remove("right"), 240);
+    setTimeout(() => document.getElementById("icon").classList.remove("right"), 320);
 };
 
-document.getElementById("visual_animation_bottom").onclick = function () {
+document.getElementById("animation_bottom").onclick = function () {
     document.getElementById("icon").classList.add("bottom");
-    setTimeout(() => document.getElementById("icon").classList.remove("bottom"), 240);
+    setTimeout(() => document.getElementById("icon").classList.remove("bottom"), 320);
 };
 
-document.getElementById("visual_animation_left").onclick = function () {
+document.getElementById("animation_left").onclick = function () {
     document.getElementById("icon").classList.add("left");
-    setTimeout(() => document.getElementById("icon").classList.remove("left"), 240);
+    setTimeout(() => document.getElementById("icon").classList.remove("left"), 320);
 };
 
-document.getElementById("visual_animation_push").onclick = function () {
+document.getElementById("animation_push").onclick = function () {
     document.getElementById("icon").classList.add("push");
-    setTimeout(() => document.getElementById("icon").classList.remove("push"), 240);
+    setTimeout(() => document.getElementById("icon").classList.remove("push"), 320);
 };
 
-document.getElementById("visual_animation_pop").onclick = function () {
+document.getElementById("animation_pop").onclick = function () {
     document.getElementById("icon").classList.add("pop");
-    setTimeout(() => document.getElementById("icon").classList.remove("pop"), 240);
+    setTimeout(() => document.getElementById("icon").classList.remove("pop"), 320);
 };
 
 document.onkeyup = function (event) {
     const key = event.which || event.keyCode || 0;
-    if (key === 37) document.getElementById("visual_animation_left").onclick();
-    if (key === 38) document.getElementById("visual_animation_top").onclick();
-    if (key === 39) document.getElementById("visual_animation_right").onclick();
-    if (key === 40) document.getElementById("visual_animation_bottom").onclick();
-    if (key === 188) document.getElementById("visual_animation_push").onclick();
-    if (key === 190) document.getElementById("visual_animation_pop").onclick();
+    if (key === 37) document.getElementById("animation_left").onclick();
+    if (key === 38) document.getElementById("animation_top").onclick();
+    if (key === 39) document.getElementById("animation_right").onclick();
+    if (key === 40) document.getElementById("animation_bottom").onclick();
+    if (key === 188) document.getElementById("animation_push").onclick();
+    if (key === 190) document.getElementById("animation_pop").onclick();
     if (key === 32) {
-        setTimeout(() => document.getElementById("visual_animation_top").onclick(), 240);
-        setTimeout(() => document.getElementById("visual_animation_right").onclick(), 480);
-        setTimeout(() => document.getElementById("visual_animation_bottom").onclick(), 720);
-        setTimeout(() => document.getElementById("visual_animation_left").onclick(), 960);
-        setTimeout(() => document.getElementById("visual_animation_push").onclick(), 1440);
-        setTimeout(() => document.getElementById("visual_animation_pop").onclick(), 1680);
+        setTimeout(() => document.getElementById("animation_top").onclick(), 320);
+        setTimeout(() => document.getElementById("animation_right").onclick(), 640);
+        setTimeout(() => document.getElementById("animation_bottom").onclick(), 960);
+        setTimeout(() => document.getElementById("animation_left").onclick(), 1280);
+        setTimeout(() => document.getElementById("animation_push").onclick(), 1920);
+        setTimeout(() => document.getElementById("animation_pop").onclick(), 2240);
     }
 };
 

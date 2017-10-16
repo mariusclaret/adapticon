@@ -37,73 +37,82 @@
 
 <body>
     <div id="content">
-        <div id="visual">
-            <div id="icon">
-                <img id="icon_background" src="/background.png">
-                <img id="icon_foreground" src="/foreground.png">
-                <div id="visual_icon_cover"></div>
-                <div id="visual_icon_shadow"></div>
-                <div id="icon_action"></div>
-            </div>
+        <div id="play">
+            <div id="visual">
+                <div id="icon">
+                    <img id="icon_background" src="/background.png">
+                    <img id="icon_foreground" src="/foreground.png">
+                    <div id="icon_cover"></div>
+                    <div id="icon_shadow"></div>
+                    <div id="icon_action"></div>
+                </div>
 
-            <div id="example">
-                <div id="example_custom">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20Z" />
+                <div id="example">
+                    <div id="example_custom">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20Z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div id="credit">
+                    <img id="credit_image">
+                    <div id="credit_title"></div>
+                    <div id="credit_subtitle"></div>
+                    <svg id="credit_twitter" viewBox="0 0 24 24">
+                        <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
                     </svg>
                 </div>
-            </div>
 
-            <div id="credit">
-                <img id="credit_image">
-                <div id="credit_title"></div>
-                <div id="credit_subtitle"></div>
-                <svg id="credit_twitter" viewBox="0 0 24 24">
-                    <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
-                </svg>
-            </div>
+                <button id="share">Share this icon</button>
+                <div id="copied">Link copied!</div>
 
-            <button id="share">Share this icon</button>
-            <div id="copied">Link copied!</div>
+                <div id="animation">
+                    <svg id="animation_top" viewBox="0 0 24 24">
+                        <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
+                    </svg>
+                    <svg id="animation_right" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+                    </svg>
+                    <svg id="animation_bottom" viewBox="0 0 24 24">
+                        <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
+                    </svg>
+                    <svg id="animation_left" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+                    </svg>
+                    <svg id="animation_push" viewBox="0 0 24 24">
+                        <path d="M19.5,3.09L15,7.59V4H13V11H20V9H16.41L20.91,4.5L19.5,3.09M4,13V15H7.59L3.09,19.5L4.5,20.91L9,16.41V20H11V13H4Z" />
+                    </svg>
+                    <svg id="animation_pop" viewBox="0 0 24 24">
+                        <path d="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z" />
+                    </svg>
+                </div>
 
-            <div id="visual_animation">
-                <svg id="visual_animation_top" viewBox="0 0 24 24">
-                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
-                </svg>
-                <svg id="visual_animation_right" viewBox="0 0 24 24">
-                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-                </svg>
-                <svg id="visual_animation_bottom" viewBox="0 0 24 24">
-                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
-                </svg>
-                <svg id="visual_animation_left" viewBox="0 0 24 24">
-                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
-                </svg>
-                <svg id="visual_animation_push" viewBox="0 0 24 24">
-                    <path d="M19.5,3.09L15,7.59V4H13V11H20V9H16.41L20.91,4.5L19.5,3.09M4,13V15H7.59L3.09,19.5L4.5,20.91L9,16.41V20H11V13H4Z" />
-                </svg>
-                <svg id="visual_animation_pop" viewBox="0 0 24 24">
-                    <path d="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z" />
-                </svg>
-            </div>
+                <div id="radius">
+                    <div id="radius_track"></div>
+                    <div id="radius_trend"></div>
+                    <div id="radius_thumb"></div>
+                    <input id="radius_input" type="range" min="0" max="48" value="24">
+                </div>
 
-            <div id="visual_radius">
-                <div id="visual_radius_track"></div>
-                <div id="visual_radius_trend"></div>
-                <div id="visual_radius_thumb"></div>
-                <input id="visual_radius_input" type="range" min="0" max="48" value="24">
-            </div>
+                <div id="corner">
+                    <div id="corner_1"></div>
+                    <div id="corner_2"></div>
+                    <div id="corner_3"></div>
+                    <div id="corner_4"></div>
+                </div>
 
-            <div id="blocker"></div>
+                <div id="blocker"></div>
 
-            <div id="custom">
-                <div id="custom_background_label">Background</div>
-                <input id="custom_background_input">
-                <div id="custom_background_line"></div>
-                <div id="custom_foreground_label">Foreground</div>
-                <input id="custom_foreground_input">
-                <div id="custom_foreground_line"></div>
-                <button id="custom_action">Finished</button>
+                <div id="custom">
+                    <div id="custom_background_label">Background</div>
+                    <input id="custom_background_input">
+                    <div id="custom_background_line"></div>
+                    <div id="custom_foreground_label">Foreground</div>
+                    <input id="custom_foreground_input">
+                    <div id="custom_foreground_line"></div>
+                    <button id="custom_action">Finished</button>
+                </div>
             </div>
         </div>
 
@@ -114,7 +123,7 @@
 
             <div id="menu_overview">Android 8 introduces a new format for app icons, which can display a variety of shapes across different device models. The look of an adaptive icon is defined by 2 layers, consisting of a background and a foreground image.</div>
 
-            <a id="twitter" href="https://twitter.com/mariusclaret">Made by Marius Claret</a>
+            <a id="menu_twitter" href="https://twitter.com/mariusclaret">Made by Marius Claret</a>
 
             <a class="menu_link" href="https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive.html">
                 <img class="menu_link_image" src="https://i.imgur.com/z1m3sMM.png">
