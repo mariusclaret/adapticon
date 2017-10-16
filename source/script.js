@@ -5,33 +5,33 @@ function image(url, height, width) {
     return "https://images.weserv.nl/?url=" + url.replace("https://", "").replace("http://", "") + "&h=" + height + "&w=" + width + "&t=squaredown";
 }
 
-let corner = 0;
-let corner_1 = 24;
-let corner_2 = 24;
-let corner_3 = 24;
-let corner_4 = 24;
+let c = 0;
+let c1 = 24;
+let c2 = 24;
+let c3 = 24;
+let c4 = 24;
 
 document.getElementById("corner").onclick = function () {
-    corner = (corner === 4) ? 0 : corner + 1;
-    document.getElementById("corner_1").className = (corner != 0 && corner != 1) ? "active" : "";
-    document.getElementById("corner_2").className = (corner != 0 && corner != 2) ? "active" : "";
-    document.getElementById("corner_3").className = (corner != 0 && corner != 3) ? "active" : "";
-    document.getElementById("corner_4").className = (corner != 0 && corner != 4) ? "active" : "";
+    c = (c === 4) ? 0 : c + 1;
+    document.getElementById("corner_1").className = (c != 0 && c != 1) ? "active" : "";
+    document.getElementById("corner_2").className = (c != 0 && c != 2) ? "active" : "";
+    document.getElementById("corner_3").className = (c != 0 && c != 3) ? "active" : "";
+    document.getElementById("corner_4").className = (c != 0 && c != 4) ? "active" : "";
 };
 
 document.getElementById("radius_input").oninput = function () {
     const value = parseInt(document.getElementById("radius_input").value) * 2;
 
-    if (corner === 0) corner_1 = corner_2 = corner_3 = corner_4 = value;
-    if (corner === 1) corner_1 = value;
-    if (corner === 2) corner_2 = value;
-    if (corner === 3) corner_3 = value;
-    if (corner === 4) corner_4 = value;
+    if (c === 0) c1 = c2 = c3 = c4 = value;
+    if (c === 1) c1 = value;
+    if (c === 2) c2 = value;
+    if (c === 3) c3 = value;
+    if (c === 4) c4 = value;
 
     document.getElementById("radius_trend").style.width = (value * 2) + "px";
     document.getElementById("radius_thumb").style.transform = "translateX(" + (value * 2) + "px";
-    document.getElementById("icon_cover").style.borderRadius = (192 + corner_1) + "px " + (192 + corner_2) + "px " + (192 + corner_3) + "px " + (192 + corner_4) + "px ";
-    document.getElementById("icon_shadow").style.borderRadius = corner_1 + "px " + corner_2 + "px " + corner_3 + "px " + corner_4 + "px ";
+    document.getElementById("icon_cover").style.borderRadius = (192 + c1) + "px " + (192 + c2) + "px " + (192 + c3) + "px " + (192 + c4) + "px ";
+    document.getElementById("icon_shadow").style.borderRadius = c1 + "px " + c2 + "px " + c3 + "px " + c4 + "px ";
 };
 
 document.getElementById("radius_input").oninput();
