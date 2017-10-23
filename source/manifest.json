@@ -2,7 +2,7 @@
     "lang": "en",
     "name": "Adapticon",
     "short_name": "Adapticon",
-    "description": "Android 8 introduces a new format for app icons, which can display a variety of shapes across different device models.",
+    "description": "Android 8 introduces a new format for app icons called Adaptive Icons, which can display a variety of shapes across different device models.",
     "categories": ["personalization", "photo", "utilities"],
     "start_url": "/",
     "scope": "/",

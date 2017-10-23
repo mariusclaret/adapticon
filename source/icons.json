@@ -26,7 +26,7 @@
     }, {
         "foreground": "https://i.imgur.com/iTStfwN.png",
         "background": "https://i.imgur.com/YkjTd2s.png",
-        "user": "CliffWade"
+        "user": "mcookie"
     }, {
         "foreground": "https://i.imgur.com/5nbdXcS.png",
         "background": "https://i.imgur.com/8iK5B40.png",
@@ -146,16 +146,6 @@
             "image": "https://pbs.twimg.com/profile_images/874702053892734976/YCyX8SNj_400x400.jpg",
             "name": "Google Design",
             "link": "https://twitter.com/googledesign"
-        },
-        "CliffWade": {
-            "image": "https://pbs.twimg.com/profile_images/896020728906039296/P9jAOKDR_400x400.jpg",
-            "name": "Cliff Wade",
-            "link": "https://twitter.com/CliffWade"
-        },
-        "jacksonhvisuals": {
-            "image": "https://pbs.twimg.com/profile_images/840281832667004928/S4Ia3jg1_400x400.jpg",
-            "name": "Jackson Hayes",
-            "link": "https://twitter.com/jacksonhvisuals"
         },
         "taylorling": {
             "image": "https://pbs.twimg.com/profile_images/850280567467671553/TFamAIzg_400x400.jpg",

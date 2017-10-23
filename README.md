@@ -1,6 +1,6 @@
 # Adaptive Icons
 
-Android 8 introduces a new format for app icons, which can display a variety of shapes across different device models. The look of an adaptive icon is defined by 2 layers, consisting of a background and a foreground image.
+Android 8 introduces a new format for app icons called Adaptive Icons, which can display a variety of shapes across different device models. The look of an adaptive icon is defined by 2 layers, consisting of a background and a foreground image.
 
 **Try them out: [https://adapticon.tooo.io/](https://adapticon.tooo.io/)**
 
