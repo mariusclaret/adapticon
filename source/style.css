@@ -56,7 +56,7 @@ body {
     background: var(--theme-color);
 }
 
-#menu_sketch {
+.menu_template {
     position: relative;
     float: left;
     height: 24px;
@@ -67,7 +67,7 @@ body {
     cursor: pointer;
 }
 
-#menu_sketch_new {
+.menu_template_new {
     position: absolute;
     top: 0;
     left: 0;
@@ -83,7 +83,7 @@ body {
     border-radius: 12px;
 }
 
-#menu_sketch_text {
+.menu_template_text {
     position: absolute;
     top: 0;
     right: 16px;
