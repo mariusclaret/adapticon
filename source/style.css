@@ -56,6 +56,49 @@ body {
     background: var(--theme-color);
 }
 
+#menu_sketch {
+    position: relative;
+    float: left;
+    height: 24px;
+    width: calc(100% - 48px);
+    margin: 24px 24px 0 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#menu_sketch_new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 56px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #F44336;
+    border-radius: 12px;
+}
+
+#menu_sketch_text {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    left: 72px;
+    height: 24px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 #menu_logo {
     position: relative;
     float: left;
