@@ -4,6 +4,10 @@
         "background": "https://adapticon.tooo.io/background.png",
         "user": "GoogleDesign"
     }, {
+        "foreground": "https://i.imgur.com/1dPKg12.png",
+        "background": "https://i.imgur.com/8UQ5VYI.png",
+        "user": "SamyMarBoyTonny"
+    }, {
         "foreground": "https://i.imgur.com/rdWZQj8.png",
         "background": "https://i.imgur.com/Mn5hNFP.png",
         "user": "taylorling"
@@ -137,13 +141,18 @@
         "user": "razgriz94"
     }],
     "users": {
+        "SamyMarBoyTonny": {
+            "image": "https://pbs.twimg.com/profile_images/677033332807462912/b12pQB3c_400x400.png",
+            "name": "Samy",
+            "link": "https://twitter.com/SamyMarBoyTonny"
+        },
         "razgriz94": {
             "image": "https://pbs.twimg.com/profile_images/788969384056270848/5vNQ5bcE_400x400.jpg",
             "name": "Cristian Ruiz",
             "link": "https://twitter.com/razgriz94"
         },
         "GoogleDesign": {
-            "image": "https://pbs.twimg.com/profile_images/874702053892734976/YCyX8SNj_400x400.jpg",
+            "image": "https://pbs.twimg.com/profile_images/925737235353280512/ocSaBqPt_400x400.jpg",
             "name": "Google Design",
             "link": "https://twitter.com/googledesign"
         },
@@ -158,7 +167,7 @@
             "link": "https://twitter.com/mcookie"
         },
         "javidots": {
-            "image": "https://pbs.twimg.com/profile_images/892338247992578048/ESmr3okn_400x400.jpg",
+            "image": "https://pbs.twimg.com/profile_images/950846203138277376/8qw2xeeW_400x400.jpg",
             "name": "Javi Toro",
             "link": "https://twitter.com/javidots"
         },
@@ -173,7 +182,7 @@
             "link": "https://twitter.com/laureanorp"
         },
         "Axinen": {
-            "image": "https://pbs.twimg.com/profile_images/894267119973650432/LWl-GeEC_400x400.jpg",
+            "image": "https://pbs.twimg.com/profile_images/939934277743140864/PbXoZDEV_400x400.jpg",
             "name": "Julian Gomez",
             "link": "https://twitter.com/Axinen"
         },
@@ -183,7 +192,7 @@
             "link": "https://twitter.com/wellingtonicons"
         },
         "mariusclaret": {
-            "image": "https://pbs.twimg.com/profile_images/908766663956365318/8L4FOJ87_400x400.jpg",
+            "image": "https://pbs.twimg.com/profile_images/950066626950508546/MO9lW0PX_400x400.jpg",
             "name": "Marius Claret",
             "link": "https://twitter.com/mariusclaret"
         },
