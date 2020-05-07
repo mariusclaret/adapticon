@@ -48,12 +48,12 @@ Adaptive Icons are intended to make all icons on a device look coherent and stil
 
 ## File Structure
 
-- Adapticon Logo: [background.png](background.png), foreground.png
+- Adapticon Logo: [background.png](source/background.png), [foreground.png](source/background.png)
 - Icons: 3x clear icons (default), 2x maskable icons (for Android), 1x solid icon (for Apple platforms)
-- Website: index.html, style.css, script.js
-- Example Collection: icons.json
-- Web App Manifest: manifest.json
-- Service Worker: worker.js
+- Website: [index.html](source/index.html), [style.css](source/style.css), [script.js](source/script.js)
+- Example Collection: [icons.json](source/icons.json)
+- Web App Manifest: [manifest.json](source/manifest.json)
+- Service Worker: [worker.js](source/worker.js)
 
 
 ## Examples by [Cristian Ruiz](https://twitter.com/razgriz94)
