@@ -46,6 +46,16 @@ Adaptive Icons are intended to make all icons on a device look coherent and stil
 - Uses [Fathom](https://usefathom.com) for anonymous and privacy-focused analytics.
 
 
+## File Structure
+
+- Adapticon Logo: background.png, foreground.png
+- Icons: 3x clear icons (default), 2x maskable icons (for Android), 1x solid icon (for Apple platforms)
+- Website: index.html, style.css, script.js
+- Example Collection: icons.json
+- Web App Manifest: manifest.json
+- Service Worker: worker.js
+
+
 ## Examples by [Cristian Ruiz](https://twitter.com/razgriz94)
 
 - [1Password](https://adapticon.mariusclaret.com/#/bg=https://i.imgur.com/3ebsVcl.png/fg=https://i.imgur.com/y1Tf4cI.png)
