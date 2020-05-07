@@ -1,0 +1,41 @@
+{
+    "lang": "en",
+    "name": "Adapticon",
+    "short_name": "Adapticon",
+    "description": "The app icon is one of the most important assets of an app and therefore it is key to make it look perfect on any device. Adaptive Icons make that possible and also allow you to add a nice little extra touch to your app.",
+    "categories": [
+        "personalization",
+        "photo",
+        "utilities"
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/icon-clear-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-clear-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "src": "/icon-masks-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "src": "/icon-masks-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
