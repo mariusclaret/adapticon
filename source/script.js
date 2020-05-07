@@ -1,9 +1,5 @@
 // GLOBALS
 
-let creator, timeout;
-
-const custom = JSON.parse(localStorage.getItem("custom") || "[]");
-
 const examples_items = document.getElementById("examples_items");
 const examples_left = document.getElementById("examples_left");
 const examples_right = document.getElementById("examples_right");
@@ -28,6 +24,8 @@ const preview_top = document.getElementById("preview_top");
 const preview_right = document.getElementById("preview_right");
 const preview_bottom = document.getElementById("preview_bottom");
 const preview_left = document.getElementById("preview_left");
+
+const upload = JSON.parse(localStorage.getItem("upload") || "[]");
 
 // MASKING
 
@@ -83,6 +81,8 @@ preview_top.oninput = preview_right.oninput = preview_bottom.oninput = preview_l
 };
 
 // ANIMATING
+
+let timeout;
 
 function animating(type, background, foreground, overlays) {
     preview_background.style.transition = preview_foreground.style.transition = "transform 800ms";
@@ -148,28 +148,12 @@ options_share.onclick = function () {
         navigator.share({
             url: window.location.href
         });
-        return;
-    }
-
-    try {
-        const copy = document.createElement("input");
-        copy.value = window.location.href;
-        document.body.appendChild(copy);
-        copy.select();
-        document.execCommand("copy");
-        document.body.removeChild(copy);
-        document.getElementById("share").innerText = "Link copied!";
-        document.getElementById("share").style.color = "#66BB6A";
-        setTimeout(function () {
-            document.getElementById("share").innerText = "Share this icon";
-            document.getElementById("share").style.color = "";
-        }, 800);
-    } catch (e) {
-        prompt("Share this Adaptive Icon with this link:", window.location.href);
+    } else {
+        prompt("Share this Adaptive Icon with this link: ", window.location.href);
     }
 };
 
-// BROWSE
+// BROWSING
 
 async function browsing(target, file) {
     if (!file || (file.type !== "image/png" && file.type !== "image/jpeg" && file.type !== "image/jpg")) return;
@@ -196,9 +180,9 @@ async function browsing(target, file) {
     document.getElementById("options_" + target + "_input").value = response.data.link;
     document.getElementById("options_" + target + "_input").oninput();
 
-    custom.push(target + ":" + response.data.link);
-    localStorage.setItem("custom", JSON.stringify(custom));
-    appending(target == "background" ? response.data.link : null, target == "foreground" ? response.data.link : null, "custom");
+    upload.push(target + ":" + response.data.link);
+    localStorage.setItem("upload", JSON.stringify(upload));
+    appending(true, target == "background" ? response.data.link : null, target == "foreground" ? response.data.link : null);
 }
 
 options_background_browse.onclick = options_foreground_browse.onclick = function () {
@@ -258,75 +242,68 @@ preview_moving.ontouchend = preview_moving.ontouchcancel = preview_moving.onmous
 // APPENDING
 
 function appending(custom, background, foreground) {
+    const examples_item = document.createElement("div");
+    examples_item.classList.add("examples_item");
+    custom ? examples_items.insertBefore(examples_item, examples_items.firstChild) : examples_items.appendChild(examples_item);
 
-    const element = document.createElement("div");
-    element.classList.add("examples_item");
-    custom ? examples_items.insertBefore(element, examples_items.firstChild) : examples_items.appendChild(element);
+    const examples_layer = document.createElement("div");
+    examples_layer.classList.add("examples_layer");
+    examples_item.appendChild(examples_layer);
 
-    const layer = document.createElement("div");
-    layer.classList.add("examples_layer");
-    element.appendChild(layer);
-
-    layer.onclick = function () {
-        if (background) options_background_input.value = background;
-        if (foreground) options_foreground_input.value = foreground;
+    examples_layer.onclick = function () {
+        if (background) options_background_input.value = background == "/background.png" ? "" : background;
+        if (foreground) options_foreground_input.value = foreground == "/foreground.png" ? "" : foreground;
         options_background_input.oninput();
     };
 
     if (background) {
-        creator = document.createElement("img");
-        creator.classList.add("examples_image");
-        creator.src = background || "/background.png";
-        layer.appendChild(creator);
+        const examples_background = document.createElement("img");
+        examples_background.classList.add("examples_image");
+        examples_background.src = background;
+        examples_layer.appendChild(examples_background);
     }
 
     if (foreground) {
-        creator = document.createElement("img");
-        creator.classList.add("examples_image");
-        creator.src = foreground || "/foreground.png";
-        layer.appendChild(creator);
+        const examples_foreground = document.createElement("img");
+        examples_foreground.classList.add("examples_image");
+        examples_foreground.src = foreground;
+        examples_layer.appendChild(examples_foreground);
     }
 
     if (custom) {
-        const remove = document.createElement("div");
-        remove.classList.add("examples_remove");
-        remove.innerText = "Remove";
-        element.appendChild(remove);
+        const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        icon.setAttributeNS(null, "viewBox", "0 0 24 24");
+        path.setAttributeNS(null, "d", "M17.66 6.34a2 2 0 010 2.83L14.83 12l2.83 2.83a2 2 0 11-2.83 2.83L12 14.83l-2.83 2.83a2 2 0 11-2.83-2.83L9.17 12 6.34 9.17a2 2 0 012.83-2.83L12 9.17l2.83-2.83a2 2 0 012.83 0z");
+        icon.classList.add("examples_remove");
+        icon.appendChild(path);
+        examples_item.appendChild(icon);
 
-        /*
-            const remove = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-            creator = document.createElementNS("http://www.w3.org/2000/svg", "path");
-            remove.setAttributeNS(null, "viewBox", "0 0 24 24");
-            creator.setAttributeNS(null, "d", "M17.66 6.34a2 2 0 010 2.83L14.83 12l2.83 2.83a2 2 0 11-2.83 2.83L12 14.83l-2.83 2.83a2 2 0 11-2.83-2.83L9.17 12 6.34 9.17a2 2 0 012.83-2.83L12 9.17l2.83-2.83a2 2 0 012.83 0z");
-            remove.classList.add("examples_remove");
-            remove.appendChild(creator);
-            element.appendChild(remove);
-            */
-
-        remove.onclick = function () {
-            element.classList.add("active");
-            //examples_items.removeChild(element);
+        icon.onclick = function () {
+            examples_item.classList.add("active");
+            if (upload.indexOf("background:" + background) > -1) upload.splice(upload.indexOf("background:" + background), 1);
+            if (upload.indexOf("foreground:" + foreground) > -1) upload.splice(upload.indexOf("foreground:" + foreground), 1);
+            localStorage.setItem("upload", JSON.stringify(upload));
         };
     }
 }
 
-// INITIALIZATION
+// EXAMPLES
 
-async function initialization() {
-
+async function examples() {
     const payload = await fetch("/icons.json").then(data => data.json());
 
     const icons = payload.icons;
     const users = payload.users;
 
-    for (let counter = 0; counter < custom.length; counter++) {
-        const layer = custom[counter].substring(0, 10);
-        const image = custom[counter].substring(11);
+    for (let counter = 0; counter < upload.length; counter++) {
+        const layer = upload[counter].substring(0, 10);
+        const image = upload[counter].substring(11);
         appending(true, layer == "background" ? image : null, layer == "foreground" ? image : null);
     }
 
     for (let counter = 0; counter < icons.length; counter++) {
-        appending(false, icons[counter].background, icons[counter].foreground);
+        appending(false, icons[counter].background || "/background.png", icons[counter].foreground || "/foreground.png");
     }
 
     examples_items.onscroll = function () {
@@ -362,7 +339,7 @@ async function initialization() {
     options_background_input.oninput();
 }
 
-initialization();
+examples();
 
 // THEME
 

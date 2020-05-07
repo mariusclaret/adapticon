@@ -16,7 +16,7 @@ Adaptive Icons are intended to make all icons on a device look coherent and stil
 - It uses new web capabilities and can be labeled as Progressive Web App.
 
 ### API Technology
-- The Web App Manifest provides basic information about the PWA (icons, name, description etc.) and gives the user the option to install the app on his device. It makes it easier to access it if he is frequently using it.
+- The Web App Manifest provides basic information about the PWA (icons, name, description, etc.) and gives the user the option to install the app on his device. It makes it easier to access it if he is frequently using it.
 - A Service Worker caches all static files and allows the website to work offline.
 - If the user wants to insert his own custom icon, he can browse his device for the image file or just drag and drop it into the window. The file is then uploaded to Imgur via the [Imgur API](https://apidocs.imgur.com/?version=latest). Then, the user can easily share the icon or access it again at a later time.
 

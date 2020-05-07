@@ -1,13 +1,12 @@
-const cache_name = "adapticon-3";
+const cache_name = "adapticon-4";
 const fine_caches = [cache_name];
 const static_files = [
     "/background.png",
-    "/foreground.png"
-    /*
+    "/foreground.png",
     "/icons.json",
     "/index.html",
     "/script.json",
-    "/style.css"*/
+    "/style.css"
 ];
 
 self.addEventListener("install", function (event) {

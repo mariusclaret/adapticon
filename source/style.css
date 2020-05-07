@@ -169,37 +169,14 @@ body {
 
 .examples_remove {
     position: absolute;
-    right: 16px;
-    bottom: -16px;
-    left: 16px;
-    height: 4px;
-    color: #FFF;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: center;
-    background: #f44336;
-    border-radius: 2px;
-    overflow: hidden;
-    transition: height 200ms 0ms, right 200ms 200ms, left 200ms 200ms;
-}
-
-.examples_remove:hover {
-    height: 32px;
-    right: 0;
-    left: 0;
-    transition: height 200ms 200ms, right 200ms 0ms, left 200ms 0ms;
-}
-
-.examples_remove1 {
-    position: absolute;
     bottom: -10px;
     left: calc(50% - 10px);
     height: 20px;
     width: 20px;
-    fill: var(--theme-subtitle);
-    background: var(--theme-title);
+    fill: #FFCDD2;
+    background: #F44336;
     border-radius: 12px;
+    box-shadow: var(--theme-elevated-shadow);
 }
 
 #originator {
