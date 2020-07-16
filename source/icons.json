@@ -6,6 +6,11 @@
             "user": "GoogleDesign"
         },
         {
+            "foreground": "https://i.imgur.com/rWD90Bi.png",
+            "background": "https://i.imgur.com/ULAAwhP.png",
+            "user": "SamyMarBoy"
+        },
+        {
             "foreground": "https://i.imgur.com/rdWZQj8.png",
             "background": "https://i.imgur.com/Mn5hNFP.png",
             "user": "taylorling"
@@ -167,6 +172,11 @@
         }
     ],
     "users": {
+        "SamyMarBoy": {
+            "image": "https://i.imgur.com/eOPqhh5.png",
+            "name": "Samy",
+            "link": "https://twitter.com/SamyMarBoy"
+        },
         "221pxls": {
             "image": "https://i.imgur.com/Ai2imDs.png",
             "name": "221 Pixels",
