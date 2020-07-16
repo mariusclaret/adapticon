@@ -1,4 +1,4 @@
-const cache_name = "adapticon-4";
+const cache_name = "adapticon-5";
 const fine_caches = [cache_name];
 const static_files = [
     "/background.png",
